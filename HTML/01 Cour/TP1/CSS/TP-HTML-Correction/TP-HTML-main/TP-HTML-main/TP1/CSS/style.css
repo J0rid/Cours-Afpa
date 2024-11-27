@@ -1,0 +1,57 @@
+/* Commentaire */
+
+/* le css est un ensemble de propriété:valeur;*/
+
+/* selecteur : permet de selectionner une ou plusieurs balises */
+
+/* par type */
+
+h1 {text-decoration: underline;
+    text-align: center;
+}
+
+form{
+    border: 1px solid black;
+    width: 50%;
+    padding: 20px;
+    /* padding : 10px 10px 10px 10px (sens aiguille d'une montre : haut, droite, bas et gauche)
+    padding-left: 10px;*/
+}
+
+/* par classe*/
+
+.d-flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.w-50 {
+    width: 50%;
+    padding: 10px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+#buttonConnection{
+    margin-top: 10px;
+}
+
+
+label{
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+
+  /*Centre le formulaire*/
+.body{
+    display: flex;
+    justify-content: center;
+
+}
+

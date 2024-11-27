@@ -1,0 +1,15 @@
+
+div {
+    width: 700px;
+    margin: 0 auto;
+}
+
+p:hover {
+    color: red;
+    cursor: pointer;
+}
+
+input:focus{
+    outline: none !important;
+    border: 2px solid red;
+}

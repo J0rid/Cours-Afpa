@@ -1,0 +1,164 @@
+<!-- Ceci est un commentaire -->
+<!-- copier/coller : ctrl+c + ctrl+v-->
+<!-- couper/coller : ctrl+x + ctrl+v-->
+<!-- revenir en arriere : ctrl+z-->
+<!-- alt + maj + f : indenter tout le document-->
+
+<!-- charset="UTF-8" (attribut HTML)-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Balise de configurations-->
+
+<head>
+    <meta charset="UTF-8"> <!-- encodage de la page-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- RWD (Pour s'adapter au telephone)-->
+    <title>Cours HMTL5</title> <!-- le titre de la page sur l'onglet de la page-->
+</head>
+
+<!-- corps de la page-->
+
+<body>
+
+    <h1>Hello World !</h1>
+    <h2>Titre 2</h2>
+    <h3>Titre 3</h3>
+    <h4>Titre 4</h4>
+    <h5>Titre 5</h5>
+    <h6>Titre 6</h6>
+    <!-- paragraphe-->
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <b>Similique,</b> <i>nemo illo eum blanditiis</i>
+        doloribus
+        mollitia doloremque beatae esse aliquid accusamus eaque deleniti soluta expedita cumque est facere iure in ex?
+    </p>
+    <!-- Aria-label est pour les non-voyants afin qu'il sache a quoi ca sert-->
+    <a href="page2.html" aria-label="Lien vers la page 2">Page 2</a>
+    <a target="_blank" href="https://www.lareponsenumerique.fr/">Blog</a>
+
+    <!-- Liste non ordonée-->
+    <ul>
+        <li>
+            <p>Element 1</p>
+        </li>
+        <li>
+            <p>Element 2</p>
+        </li>
+        <li>
+            <p>Element 3</p>
+        </li>
+    </ul>
+
+    <!-- Liste ordonée-->
+    <ol>
+        <li>
+            <p>Element 1</p>
+        </li>
+        <li>
+            <p>Element 2</p>
+        </li>
+        <li>
+            <p>Element 3</p>
+        </li>
+    </ol>
+
+    <!-- tableau HTML-->
+
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Nom
+                </th>
+                <th>
+                    Prenom
+                </th>
+                <th>
+                    Sexe
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Habbani</td>
+                <td>Samih</td>
+                <td>Homme</td>
+
+            </tr>
+            <tr>
+                <td>Hicham</td>
+                <td>Laouine</td>
+                <td>Homme</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Images-->
+    <!-- alt = permet de gerer l'accessibilité numérique-->
+    <!-- texte alternatif qui s'affichera si l'image ne se charge pas dans le navigateur. Mais c'est aussi un texte qui est utilisé par les logiciels mal voyants-->
+    <img width="150" src="img/OIP.jpg" alt="Deux arbre au couché du soleil">
+
+    <!-- Vidéos-->
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- embedded content-->
+    <iframe width="1227" height="690" src="https://www.youtube.com/embed/hlePA5rsTyY"
+        title="Comment mettre en ligne un projet en Symfony 6? [2023]" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- google maps-->
+    <iframe style="width: 100%;"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83994.11431670599!2d2.3270295938476693!3d48.86171759866014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1728914133130!5m2!1sfr!2sfr"
+        width="600" height="450" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    <!-- Saut de ligne-->
+     <br>
+     
+    <!-- Bouton-->
+     <button></button>
+     
+    <!-- Trace une ligne separatrice-->
+    <hr>
+
+    <!--svg-->
+
+       <!-- Pour les images
+        JPG
+        JPEG
+        => Pour les images grandeur nature souvent les paysages
+        => Les photos ont beaucoup de détails
+        => Ils ne generent as la transparence
+        => Lourd
+
+        PNG
+        => Utilisé pour les images les plus petites comme les logos
+        => Des petites images
+        => Ca gère la transparence
+        => Moins lourd
+
+        SVG
+        => C'est une forme vectorielle
+        => C'est une image sous forme de code
+        => Ca gère la transparence
+        => C'est très leger
+        => Et ca ne se déforme pas (zoom ou pas)
+
+        WEBP
+        => Le WEBP est le format d'image le plus adapté recommandé par google
+        
+        -->
+
+    <!-- Les formulaires-->
+
+
+
+</body>
+
+</html>

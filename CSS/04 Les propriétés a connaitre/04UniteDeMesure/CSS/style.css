@@ -1,0 +1,63 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+div {
+
+    background-color: red;
+    color: white;
+    margin: 20px;
+}
+
+p {
+    font-size: 40px;
+}
+
+#width_pixels {
+    width: 1000px;
+}
+
+.container {
+
+    border: 5px solid green;
+
+}
+
+.inner-elem {
+    border: 2px solid black;
+}
+
+.parent{
+    width: 60%;
+}
+
+#width_percentage {
+    width: 50%;
+}
+
+.parent_vw {
+    width: 60vw;
+}
+
+#width_vw {
+    width: 60vw;
+
+}
+
+.parent_height_percentage {
+    height: 30%;
+}
+
+#height_percentage {
+    height: 20%;
+}
+
+.parent_vh {
+    height: 5vh;
+}
+
+.height_vh {
+    height: 10vh;
+}

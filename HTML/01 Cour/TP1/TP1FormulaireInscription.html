@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP : 1 Formulaire d'Inscription</title>
+</head>
+<body>
+    <fieldset>
+        <center>
+        <form action="">
+            <h1><b>Formulaire d'Inscription</b></h1>
+     <section>
+        <ul>
+            
+
+        
+            <legend><i>Prénom :</i></legend>
+                <input type="text" required>
+
+            <legend><i>Nom :</i></legend>    
+                <input type="text" required>
+
+            <legend><i>Date de Naissance :</i></legend>
+                <input type="date" required>
+
+            <legend><i>Téléphone :</i></legend>
+                <input type="text" required>
+
+            <legend><i>Ville :</i></legend>
+                <input list="villes" name="ville" id="ville" required>
+                    <datalist id="villes">
+                        <option value="Nice">Nice</option>
+                        <option value="Marseille">Marseille</option>
+                        <option value="Lyon">Lyon</option>
+                        <option value="Paris">Paris</option>
+                    </datalist>
+
+            <legend><i>Pays :</i></legend>
+                <select name="pays" id="pays" required>
+                    <option value="france">France</option>
+                    <option value="italie">Italie</option>
+                    <option value="allemagne">Allemagne</option>
+                    <option value="espagne">Espagne</option>
+                </select>
+
+            <legend><i>Adresse :</i></legend>
+                <textarea name="" id="adresse" required>Votre adresse</textarea>
+
+
+            <legend><i>Code Postal :</i></legend>
+                <input type="text" required>
+
+            <legend><i>Civilité :</i></legend>
+                <label for="title_1">
+                    <input type="radio" id="title_1" name="title" value="Mme.
+                "> Femme
+                </label>
+                <label for="title_2">
+                    <input type="radio" id="title_2" name="title" value="M.
+                "> Homme
+                </label>
+
+            <legend><i>Comment avez-vous entendu parler de ce site ?</i></legend>
+                <input type="checkbox"> Un ami
+                <input type="checkbox"> Une publicité
+             <input type="checkbox"> Par hasard
+
+            <legend><i>Email :</i></legend>
+                <input type="email" required>
+
+            <legend><i>Mot de passe :</i></legend>
+             <input type="password" required>
+
+            <legend><i>Avatar :</i></legend>
+             <input type="file" required>
+
+
+            <legend><i>Sur une echelle de 1 à 5, quelle note donneriez-vous à ce formulaire ?</i></legend>
+             <input type="range" min="1" max="5" required>
+
+
+            <legend><i>Vous pouvez choisir la couleur de votre thème lors de la création de votre profil</i></legend>
+                <input type="color" name="" id="">
+
+
+
+            <input type="Submit" value="S'inscrire" id="s'inscrire">
+         <input type="reset" value="Recommencer">
+
+
+
+
+
+
+
+
+        </ul>
+     </section>
+        </center>
+    </fieldset>
+          </form>
+
+</body>
+</html>

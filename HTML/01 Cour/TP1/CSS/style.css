@@ -1,0 +1,40 @@
+/* Commentaire */
+
+/* propriété:valeur;*/
+
+/* selecteur : permet de selectionner une ou plusieurs balises */
+
+/* par type */
+
+h1 {text-decoration: underline;
+    text-align: center;
+}
+
+form{
+    border: 1px solid black;
+    padding: 10px;
+    /* padding : 10px 10px 10px 10px (sens aiguille d'une montre : haut, droite, bas et gauche)
+    padding-left: 10px;*/
+}
+
+/* par classe*/
+
+.d-flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+#buttonConnection{
+    margin-top: 10px;
+}
