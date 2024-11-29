@@ -57,6 +57,25 @@ class Dom {
         elemHTML.style[property] = value;
     }
 
+
+    static getValueElement (elemHTML){
+        return this.getDomElement(elemHTML).value
+    }
+
+    static getValueCheckElement(elemHTML){
+        return this.getDomElement(elemHTML).checked;
+    }
+
+    static containsClass(elemHTML, elemClass){
+        return elemHTML.classList.contains(elemClass);
+    }
+
+    static toggleElem(elemHTML, class1, class2, text){
+        elemHTML.classList.toggle(class1);
+        elemHTML.classList.toggle(class2);
+        this.modifyHtml(elemHTML, text);
+    }
+
 }
 
 export default Dom

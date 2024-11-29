@@ -9,6 +9,10 @@ class LocalStroage {
         return JSON.parse(localStorage.getItem(key)) || [];
     }
 
+    static deleteAll(key){
+        localStorage.removeItem(key)
+    }
+
 
 }
 

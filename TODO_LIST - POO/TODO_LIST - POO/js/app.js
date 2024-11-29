@@ -6,29 +6,7 @@ const TODO_LIST = document.querySelector(".todo-list");
 const REMIND_ALL = document.querySelector(".reminder-all");
 
 
-function createTodo () {
 
-    TODO_FORM.addEventListener("submit", function(e) {
-
-        e.preventDefault(); // j'empêche le chargement de la page
-
-        // je récupère les valeurs soumises de mon formulaire
-        let inputTextDodo = document.getElementById('task').value;
-        let inputDateDoto = document.getElementById('due-date').value;
-        let inputReminder = document.getElementById('reminder').checked;
-
-        let newTodo = {
-            id : Math.floor(Math.random() * 1000000) + 1,
-            name: inputTextDodo,
-            date: inputDateDoto,
-            reminder: inputReminder
-        };
-
-
-
-    }); 
-
-}
 
 function deleteTodo() {
 
@@ -49,20 +27,7 @@ function deleteTodo() {
 
 }
 
-function handleDeleteTodo(id) {
 
-    //ES6
-    let listTodos = JSON.parse(localStorage.getItem("todos")) || [];
-
-    let listTodosUpdated = listTodos.filter(function(todo) {
-        return todo.id != id; // retourne moi dans ma nouvelle liste, les todo de listTodos dont l'id n'est pas égal à l'id que j'ai en argument et que je souhaite supprimer
-    });
-
-    console.log(listTodosUpdated);
-
-    localStorage.setItem("todos", JSON.stringify(listTodosUpdated));
-
-}
 
 function getTodosCount() {
 
@@ -99,17 +64,7 @@ function toggleShowForm() {
 
 }
 
-function deleteTodos() {
 
-    CLEAR_ALL.addEventListener("click", function() {
-
-        localStorage.removeItem("todos");
-        loadTodos(); // recharge la liste
-        getTodosCount(); // remet à jour le compteur
-
-    });
-
-}
 
 function toggleReminder() {
 
@@ -151,31 +106,7 @@ function toggleReminder() {
 // objectif c'est de n'afficher que les todos qui ont un rappel
 function filterTodos() {
 
-    REMIND_ALL.addEventListener("click", function(){
 
-        TODO_LIST.classList.toggle("filtered");
-
-        let filtered = TODO_LIST.classList.contains("filtered");
-        let listTodos = JSON.parse(localStorage.getItem("todos")) || [];
-        let listFiltered;
-        if(filtered) {
-
-            listFiltered = listTodos.filter(function(todo) {
-                return todo.reminder;
-            });
-        
-        } else {
-            listFiltered = JSON.parse(localStorage.getItem("todos"));
-        }
-
-        TODO_LIST.innerHTML = "";
-        listFiltered.forEach(function(todo){
-            createLiTodo(todo);
-        });
-
-        handleFilterButtonChange(filtered);
-
-    });
 
 
 }
@@ -192,38 +123,4 @@ function handleFilterButtonChange(filtered) {
     }
 }
 
-function loadTodos() {
 
-    console.log("loadTodos");
-    // je récupère tous mes todos depuis localstorage
-    let listTodos = JSON.parse(localStorage.getItem('todos')) || [];
-
-    TODO_LIST.innerHTML = "";
-
-    listTodos.forEach(function(todo) {
-
-        createLiTodo(todo);
-
-    });
-
-}
-
-function createLiTodo(todo) {
-
-
-
-    // je suis obligé de recharger l'add eventlistener
-    // car j'ai soit créé un nouveau todo
-    // soit je viens de les charger dans la page
-    deleteTodo();
-    toggleReminder();
-    getTodosCount();
-
-} 
-
-loadTodos(); // charger les todos dans ma liste
-createTodo(); // pour gérer l'ajout d'un todo onsubmit
-toggleShowForm();
-getTodosCount(); // permet de récupérer le nombre de todos
-deleteTodos();
-filterTodos();
