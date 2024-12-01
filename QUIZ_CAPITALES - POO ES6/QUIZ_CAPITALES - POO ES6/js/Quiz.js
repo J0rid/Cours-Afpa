@@ -17,7 +17,7 @@ class Quiz {
         this.questions = questions;
         this.restartBtn = restartBtn;
 
-        Dom.triggerEvent(this.restartBtn, 'click', this.startQuiz)
+        Dom.triggerEvent(this.restartBtn, 'click', () => this.startQuiz());
     }
 
     startQuiz() {
@@ -44,7 +44,7 @@ class Quiz {
         const question = this.questions[this.currentQuestionIndex];
         Dom.modifyText(this.questionText, `Quelle est la capitale de ${Question.country}?`);
 
-        const answers = mixQuestionAnswer();
+        const answers = question.mixQuestionAnswer();
 
         Dom.modifyHtml(this.answersContainer, '');
         Dom.modifyText(this.responseMessage, '');
@@ -58,7 +58,7 @@ class Quiz {
     }
 
     checkAnswer(button, selected, correct) {
-        const buttons = answersContainer.querySelectorAll('button');
+        const buttons = this.answersContainer.querySelectorAll('button');
         buttons.forEach(btn => btn.disabled = true); // Désactive tous les boutons
 
         if (selected === correct) {

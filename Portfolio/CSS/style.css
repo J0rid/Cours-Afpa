@@ -1,0 +1,106 @@
+/* Reset CSS */
+* {
+    margin: 0 !important;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(to bottom, #001f3f, #0a0c27);
+    color: #fff;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #072142;
+}
+
+/* Parallax section */
+.parallax {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(7, 33, 66, 0.7));
+    height: 100vh;
+}
+
+.parallax h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.parallax p {
+    font-size: 1.25rem;
+}
+
+/* A propos */
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Portfolio Cards */
+.card {
+    border: none;
+    background-color: #1c1e26;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+/* Footer */
+footer {
+    background-color: #0a0c27;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Links hover effects */
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff4500 !important;
+}
+
+
